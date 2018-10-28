@@ -110,11 +110,10 @@ public class GetImages {
         }
     }
 
-    public String download(String url) {
+    public void download(String url) {
         for(String fileName : get(url)){
             downloadSingleImg(fileName);
         }
-        return "Done";
     }
 
 
